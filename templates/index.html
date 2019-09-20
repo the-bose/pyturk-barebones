@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PyTurk</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}" sizes="16x16 32x32" type="image/png">
+	<!-- BOOTSTRAP & JQUERY -->
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<!-- BOOTSTRAP & JQUERY END -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+	<!-- NAVBAR -->
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbear-header">
+					<div class="navbar-brand" href="#">
+						<img style="max-width: 64px" src="{{ url_for('static', filename='img/logo-navbar.png') }}">
+						<b>PyTurk</b>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- NAVBAR ENDS -->
+
+	<!-- MAIN CONTAINER -->
+	<div class="container">
+		<form class="" action="/run" method="post">
+			<button type="submit" class="btn btn-primary" name="runBtn">Start Routine</button>
+		</form>
+		<h3>Current Operation: {{ op }}</h3>
+	</div>
+	<!-- MAIN CONTAINER ENDS -->
+
+
+
+
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
