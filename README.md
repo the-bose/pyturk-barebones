@@ -11,7 +11,7 @@ PyTurk is a GUI automation tool that helps in automating workflow based on _'fla
 ```
   $ git clone https://github.com/the-bose/pyturk-barebones/
 ```
-* Install requirements
+* Install dependencies
 ```
   $ pip install -r requirements.txt
 ```
